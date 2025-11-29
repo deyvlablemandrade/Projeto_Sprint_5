@@ -5,8 +5,13 @@ import streamlit as st
 car_data = pd.read_csv('vehicles.csv') # lendo os dados
 
 # Criar cabeçalho principal
-st.header('Dashboard de Análise de Veículos Usados')
+st.title('Dashboard Deyvla')  # Título grande
+st.header('Análise de Veículos Usados')
 
+st.write('Bem-vindo ao dashboard de análise de veículos usados! Aqui você pode explorar os dados de anúncios de vendas de carros usados e visualizar diferentes gráficos para entender melhor o mercado.')  
+
+st.markdown('## Seção de Gráficos')  # Cabeçalho médio
+st.write('Nesta seção, você pode criar diferentes tipos de gráficos para analisar os dados de anúncios de vendas de carros usados. Sinta-se à vontade para explorar os dados!')
 hist_button = st.button('Criar histograma') # criar um botão de histograma
 
 if hist_button: # se o botão for clicado
